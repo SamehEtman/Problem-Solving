@@ -1,3 +1,4 @@
+// brute force + simple math
 #include <iostream>
 #include <vector>
 #include <string>

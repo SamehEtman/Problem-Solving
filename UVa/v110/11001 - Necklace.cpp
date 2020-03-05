@@ -1,3 +1,4 @@
+// brute force - max func
 #include <iostream>
 #include <vector>
 #include <string>

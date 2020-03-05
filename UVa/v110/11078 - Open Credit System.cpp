@@ -1,3 +1,5 @@
+// o(n^2) will give you time limit
+// so u must make an o(n) scan by maintaining the maximum value over the array
 #include <iostream>
 #include <vector>
 #include <string>

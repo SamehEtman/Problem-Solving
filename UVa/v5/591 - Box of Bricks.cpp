@@ -1,4 +1,4 @@
-
+// just simulate move from which above the average to below the average
 #include <iostream>
 #include <vector>
 #include <string>

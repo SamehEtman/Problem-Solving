@@ -1,3 +1,4 @@
+// simulate then sort then find duplicates
 #include <iostream>
 #include <vector>
 #include <string>

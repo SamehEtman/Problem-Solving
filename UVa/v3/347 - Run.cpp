@@ -1,3 +1,7 @@
+// use a function to check if the number is runaround
+// push runaround numbers from 12 to 10 millions
+// output the runaround number that is equal or bigger than the given number
+// don't forget that runaround can't have two or more digits of the same value
 #include <iostream>
 #include <vector>
 #include <string>

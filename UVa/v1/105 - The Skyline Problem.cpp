@@ -1,3 +1,5 @@
+// make an array that represents the heights
+// when the height changes u add the change to the output
 #include <iostream>
 #include <vector>
 #include <string>

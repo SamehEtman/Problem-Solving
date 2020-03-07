@@ -1,3 +1,8 @@
+// the key is to notice that the maximum array number is less than n
+// so if u already know if the third number exists or not
+// take 2 0 1 3 4 as an example
+// take 2 and 1 u know the third number is 0 but it's already taken
+// take 1 and 3 u know the third number is 5 but it's not there caust it's not less than n
 #include <iostream>
 #include <vector>
 #include <string>

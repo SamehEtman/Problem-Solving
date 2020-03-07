@@ -1,3 +1,6 @@
+// bound the numerator to 9876543210
+// numerator = Denominator * the number given
+// check if digits are unique
 #include <iostream>
 #include <vector>
 #include <string>

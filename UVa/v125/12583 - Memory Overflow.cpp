@@ -1,4 +1,3 @@
-//o(n^2) just simulation
 #include <iostream>
 #include <vector>
 #include <string>

@@ -1,3 +1,6 @@
+//just simulation
+// numerator and demorator are between 1234 and 98765
+// check digits uniqueness
 #include <iostream>
 #include <vector>
 #include <string>

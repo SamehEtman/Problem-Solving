@@ -1,4 +1,4 @@
-// sort and simulat
+// sort and simulate
 #include <iostream>
 #include <vector>
 #include <string>

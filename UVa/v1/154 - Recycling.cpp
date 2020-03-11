@@ -1,4 +1,5 @@
-
+// just simulate the process
+// using 3 nested loops
 #include <iostream>
 #include <vector>
 #include <string>

@@ -1,3 +1,5 @@
+// the whole problem is to understand the wanted 
+// the rest is just simulation 
 #include <iostream>
 #include <vector>
 #include <string>

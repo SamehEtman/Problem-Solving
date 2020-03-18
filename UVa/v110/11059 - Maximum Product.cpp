@@ -1,3 +1,5 @@
+// save the max product for each subsequence 
+// o(n^2)
 #include <iostream>
 #include <vector>
 #include <string>

@@ -1,3 +1,5 @@
+// Simulate and  print only when the three living beings
+// are in strict increasing order or decreasing
 #include <iostream>
 #include <vector>
 #include <string>

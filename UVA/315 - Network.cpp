@@ -1,5 +1,4 @@
 /*
-    simply check if it's a bibartite graph or not
 */
 
 #include <bits/stdc++.h>

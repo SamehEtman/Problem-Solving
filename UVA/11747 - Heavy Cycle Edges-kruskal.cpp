@@ -66,8 +66,9 @@ public:
 
 int main()
 {
-    while (cin >> V >> E && V && E)
+    while (cin >> V >> E && (V || E))
     {
+
         int total = 0;
         edgeList.clear();
         for (int i = 0; i < E; i++)
@@ -80,7 +81,7 @@ int main()
         sort(edgeList.begin(), edgeList.end());
         int mstCost = 0;
         UnionFind UF(V);
-
+        vector<int> cycles;
         for (int i = 0; i < E; i++)
         {
             pair<int, pair<int, int>> front = edgeList[i];
@@ -90,8 +91,24 @@ int main()
                 mstCost += front.first;
                 UF.unionSet(front.second.first, front.second.second);
             }
+            else
+            {
+                cycles.push_back(front.first);
+            }
         }
-        cout << total - mstCost << endl;
+        if (cycles.size() == 0)
+        {
+            cout << "forest\n";
+            continue;
+        }
+        sort(cycles.begin(), cycles.end());
+        for (int i = 0; i < cycles.size(); i++)
+        {
+            if (i == cycles.size() - 1)
+                cout << cycles[i] << endl;
+            else
+                cout << cycles[i] << " ";
+        }
     }
 
     return 0;

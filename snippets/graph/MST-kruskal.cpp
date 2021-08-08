@@ -5,11 +5,7 @@ using namespace std;
 
 int V, E;
 
-vector<vector<pair<int, int>>> adjList;
 vector<pair<int, pair<int, int>>> EdgeList;
-vector<int> tp;
-vector<bool> visited;
-priority_queue<pair<int, int>> pq;
 
 class UnionFind
 { // OOP style

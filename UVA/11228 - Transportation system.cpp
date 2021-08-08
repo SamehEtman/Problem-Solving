@@ -82,7 +82,11 @@ int main()
             }
         }
 
-        double inStateCost = 0, outStateCost = 0, statesNum = 1;
+        // kruskal's algorithm
+
+        double inStateCost = 0, // road
+            outStateCost = 0,   // railroad
+            statesNum = 1;
 
         sort(edgeList.begin(), edgeList.end());
         UnionFind UF(n);

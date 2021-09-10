@@ -10,15 +10,21 @@ const int mod = 1e9 + 7;
 void solve() {
     string s;
     cin >> s;
-    bool visited[s.size()] = {};
+    s = ' ' + s;
+    bool visited[(int)s.size() + 1];
+    memset(visited, 0, sizeof visited);
+    visited[0] = 1;
     ll ans = 0;
     for (int i = 2; i < (int)s.size(); i++) {
+        bool flag = 0;
         if (s[i] == s[i - 1] && !visited[i - 1]) {
-            visited[i] = 1;
+            flag = 1;
         }
         if (i > 2 && s[i] == s[i - 2] && !visited[i - 2]) {
-            visited[i] = 1;
+            flag = 1;
         }
+        if (flag) cout << s[i] << endl;
+        visited[i] = flag;
         ans += visited[i];
     }
     cout << ans << endl;

@@ -8,14 +8,14 @@ using namespace std;
 const int mod = 1e9 + 7;
 
 void solve() {
-    int a, b, last = -1e5;
+    int a, b , last = -1e5;
     cin >> a >> b;
     string s;
     cin >> s;
     ll ans = 0;
-    for (int i = 0; i < (int)s.size(); i++) {
-        if (s[i] == '1') {
-            ans += min(a, (i - last - 1) * b);
+    for (int i = 0 ;i < (int)s.size() ; i++){
+        if (s[i] == '1'){
+            ans += min ( a , (i - last - 1) * b);
             last = i;
         }
     }

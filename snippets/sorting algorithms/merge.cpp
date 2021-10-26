@@ -6,6 +6,9 @@ using namespace std;
 #define LSOne(S) (S & (-S))
 #define ii pair<int, int>
 
+// space comp : worst = O(n log(n)) , best and avg = O(n)
+// time comp : best and avg = O (log(n))
+
 const int mod = 1e9 + 7;
 void merge(vector<int>& left, vector<int>& right, vector<int>& arr) {
     int i, j, k;

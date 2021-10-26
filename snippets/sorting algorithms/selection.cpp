@@ -6,6 +6,9 @@ using namespace std;
 #define LSOne(S) (S & (-S))
 #define ii pair<int, int>
 
+// space comp : best and avg = O(1)
+// time comp : worst and avg = O (n ^ 2)
+
 const int mod = 1e9 + 7;
 void selectionSort(vector<int>& arr) {
     int n = arr.size();

@@ -6,6 +6,10 @@ using namespace std;
 #define LSOne(S) (S & (-S))
 #define ii pair<int, int>
 
+// space comp : worst = O(n) , best and avg = O(log(n))
+// time comp : worst = O(n^2) sorted and can be solved by a random pivot
+// best = O(n log(n))
+
 const int mod = 1e9 + 7;
 int partition(vector<int>& arr, int start, int end) {
     int partitionIndex = start;

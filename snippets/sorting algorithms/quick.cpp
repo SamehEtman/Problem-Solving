@@ -14,7 +14,7 @@ const int mod = 1e9 + 7;
 int partition(vector<int>& arr, int start, int end) {
     int partitionIndex = start;
     int pivot = arr[end];
-    for (int i = start; i <= end; i++) {
+    for (int i = start; i < end; i++) {
         if (arr[i] <= pivot) {
             swap(arr[partitionIndex], arr[i]);
             partitionIndex++;

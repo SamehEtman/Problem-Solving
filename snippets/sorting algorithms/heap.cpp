@@ -13,7 +13,7 @@ const int mod = 1e9 + 7;
 void heapify(vector<int>& arr, int start, int size) {
     int left = 2 * start + 1;
     int right = 2 * start + 2;
-    int largest = arr[start];
+    int largest = start;
     if (left < size && arr[left] > arr[largest]) {
         largest = left;
     }
